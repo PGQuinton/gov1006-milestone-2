@@ -1,0 +1,29 @@
+---
+title: "Milestone 2"
+author: "Pieter Quinton"
+date: "2/14/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+```
+
+
+```{r}
+
+# I downloaded the data as an RData file so it doesn't need to be read into R.
+# Instead, I can just load it in.
+load("CCAP08.RData")
+
+# I assign the data table to data.
+
+data <- table
+
+# I print a summary of the data
+
+summary(data)
+```
+
